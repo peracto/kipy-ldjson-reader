@@ -1,13 +1,17 @@
 from setuptools import setup
 
 setup(
-        name='json2csv',
-        version='0.1',
-        modules=['json2csv'],
-        scripts=['json2csv.py'],
-        url='https://github.com/evidens/json2csv',
+        name='kipy-ldjson-reader',
+        version='1.0',
+        packages=['kipy_ldjson_reader'],
+        url='https://github.com/peracto/kipy-ldjson-reader',
+        keywords=['ldjson'],
         license='MIT License',
-        author='evidens',
+        author='Gary Ranson',
         author_email='',
-        description='Converts JSON files to CSV (pulling data from nested structures). Useful for Mongo data',
+        description='Reads ldjson data streams',
+        python_requires='>=3.7',
+        classifiers=[
+                'Programming Language :: Python :: 3.7'
+        ]
 )
